@@ -22,7 +22,7 @@ jobs:
         go-version: '1.21.5'
 
     - name: Build
-      run: go build -o papermc-fetch -v ./...
+      run: go build -v -o papermc-fetch
 
     - name: Test
       run: go test -v ./...
